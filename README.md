@@ -1,6 +1,6 @@
 # Project Name
 
-## Book Finder 
+<font size="4"> Book Finder </font size>
 
 # Overview
 
