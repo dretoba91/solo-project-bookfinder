@@ -1,10 +1,10 @@
 # Project Name
 
-<font size="4">Book Finder</font size>
+***Book Finder***
 
 # Overview
 
-**This project was built for Chingu Voyage pre-work. This application fecth data from the Google Book API.
+**This project was built for Chingu Voyage pre-work. This application fecth data from the Google Book API.**
 
 # Features
 
