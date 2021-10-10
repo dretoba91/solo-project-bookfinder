@@ -1,38 +1,183 @@
-.App {
+@import "~antd/dist/antd.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: #fdeedc;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: auto; */
+  margin: 0 auto;
+  padding: 2rem 10px 4rem;
+}
+
+.inner {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  margin-top: 5px;
+  border-right: 5px #5b5b5b solid;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+}
+
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: calc(0.5 * 100px);
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+/* .app-name {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  letter-spacing: 3px;
+} */
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.books {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  margin: 0 auto;
+  width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 5px, 10px, 5px;
+  /* max-width: 100%;*/
+  width: auto;
+  justify-content: center;
+}
+
+.card-button span {
+  padding: 0.3rem;
+}
+
+.card-button {
+  height: 100%;
+}
+
+.book-card-content {
+  height: 100%;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book-card h4 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-div {
+  background-color: aqua;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.card-img {
+  margin-bottom: 1rem;
+  width: 100px;
+  border-radius: calc(0.25rem - 1px);
+  vertical-align: middle;
+  border-style: none;
+}
+
+.card-img:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(92, 92, 92, 0.175);
+}
+
+.book-card {
+  background-color: #f5f2f2;
+  margin: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-container {
+    width: 400px;
   }
 }
