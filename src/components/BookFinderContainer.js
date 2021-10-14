@@ -42,7 +42,7 @@ function BookFinderContainer() {
       const response = await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=${inputText}&key=${KEY}&maxResults=16`
       );
-      console.log(response.data.items);
+      // console.log(response.data.items);
       if (!response.data.items) {
         setLoading(false);
         const errorMessage = {

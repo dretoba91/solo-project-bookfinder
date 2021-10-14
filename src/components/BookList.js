@@ -20,9 +20,9 @@ function BookList({ books }) {
     setVisibleBook(false);
   };
 
-  const handleCancel = () => {
-    setVisibleBook(false);
-  };
+  // const handleCancel = () => {
+  //   setVisibleBook(false);
+  // };
 
   const book = books.map((item) => (
     <BookCard key={item.etag} bookItems={item} showBook={showBook} />
@@ -36,7 +36,7 @@ function BookList({ books }) {
         title={showUp.title}
         visible={visibleBook}
         onOk={handleOk}
-        onCancel={handleCancel}
+        // onCancel={handleCancel}
       >
         <img
           src={showUp.image}
